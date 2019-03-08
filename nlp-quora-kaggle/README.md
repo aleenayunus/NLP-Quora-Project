@@ -28,9 +28,13 @@ In this notebook we created the model with a single LSTM cell fed into a dynamic
 # Notebook 6- Final_LSTMModel
 This was the final notebook which integrated things from the previous notebooks. It downsampled the data first, then pre-processed it, extracted features, embedded the words using gloVe, created the computational graph for the model created in notebook 5, then ran the model on train data, test data (predictions stored in submission.csv) and also has an added code block for testing your own questions for sincerity. It also includes tensor board visualization for visualizing the cross entropy loss, embeddings and the comp graph. Model checkpointing was also done by saving the model after certain intervals. 
 
+# Data taken from: https://www.kaggle.com/c/quora-insincere-questions-classification/data
+
 # Running the Project
+# github didn't let us upload the embeddings.zip or train.zip due to large file size, so those two are missing in the repo
 Do the following steps to run the project:
-1. Run the script download_dataset.sh to unzip the data and embeddings
-2. (Optional) Run Notebooks 0-5
-3. Run Notebook 6!
-4. To see the tensorboard visualizations, use the checkpointing directory as the LOG_DIR
+1. Get the data (embeddings.zip & train.csv) from the link provided above and save them in the data folder. 
+2. Run the script download_dataset.sh to unzip the dataset and embeddings
+3. (Optional) Run Notebooks 0-5
+4. Run Notebook 6!
+5. To see the tensorboard visualizations, use the checkpointing directory as the LOG_DIR
